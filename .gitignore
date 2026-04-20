@@ -4,6 +4,18 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Spring Boot ###
+# Exclude application properties with secrets
+src/main/resources/application.properties
+src/main/resources/application-*.properties
+
+### Maven ###
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
 ### STS ###
 .apt_generated
 .classpath
@@ -31,3 +43,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### OS files ###
+.DS_Store
+Thumbs.db
